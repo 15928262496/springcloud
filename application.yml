@@ -1,17 +1,17 @@
 spring:
   profiles:
-    active: dev1
+    active: dev
 ---
 server:
   port: 9002
 spring:
   application:
     name: USER-PROVIDER1
-  profiles: dev1
+  profiles: dev
 ---
 server:
   port: 9003
 spring:
   application:
     name: USER-PROVIDER2
-  profiles: dev2
+  profiles: test
