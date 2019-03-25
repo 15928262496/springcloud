@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: dev1
+---
+server:
+  port: 9002
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      #      defaultZone: http://wd7001.cn:7001/eureka,http://wd7004.cn:7004/eureka
+      defaultZone: http://localhost:7001/eureka
+spring:
+  profiles: dev1
+---
+server:
+  port: 9003
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      #      defaultZone: http://wd7001.cn:7001/eureka,http://wd7004.cn:7004/eureka
+      defaultZone: http://localhost:7001/eureka
+spring:
+  profiles: dev2
