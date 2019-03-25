@@ -4,14 +4,14 @@ spring:
     - dev
 ---
 server:
-  port: 9002
+  port: 8001
 spring:
   application:
     name: USER-PROVIDER1
   profiles: dev
 ---
 server:
-  port: 9003
+  port: 8002
 spring:
   application:
     name: USER-PROVIDER2
